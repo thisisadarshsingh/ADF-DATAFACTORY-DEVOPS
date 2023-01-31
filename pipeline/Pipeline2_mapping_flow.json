@@ -27,7 +27,7 @@
 				}
 			},
 			{
-				"name": "Wait1",
+				"name": "Wait for 1 second",
 				"type": "Wait",
 				"dependsOn": [
 					{
