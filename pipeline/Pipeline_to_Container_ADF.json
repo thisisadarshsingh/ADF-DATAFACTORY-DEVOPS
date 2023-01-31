@@ -1,5 +1,5 @@
 {
-	"name": "Pipeline_to_Dev_ADF",
+	"name": "Pipeline_to_Container_ADF",
 	"properties": {
 		"activities": [
 			{
@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					}
 				}
