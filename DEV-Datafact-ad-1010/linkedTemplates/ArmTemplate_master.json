@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'Dataset1_Source_data'"
 		},
+		"LS_CSV_FILES_IN_CONTAINER_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_CSV_FILES_IN_CONTAINER'"
+		},
 		"LS_to_Dev_Conatiner_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_to_Dev_Conatiner'"
@@ -44,6 +48,9 @@
 					},
 					"Dataset1_Source_data_connectionString": {
 						"value": "[parameters('Dataset1_Source_data_connectionString')]"
+					},
+					"LS_CSV_FILES_IN_CONTAINER_connectionString": {
+						"value": "[parameters('LS_CSV_FILES_IN_CONTAINER_connectionString')]"
 					},
 					"LS_to_Dev_Conatiner_connectionString": {
 						"value": "[parameters('LS_to_Dev_Conatiner_connectionString')]"

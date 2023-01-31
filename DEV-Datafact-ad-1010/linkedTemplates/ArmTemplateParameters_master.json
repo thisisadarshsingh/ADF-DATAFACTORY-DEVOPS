@@ -8,6 +8,9 @@
 		"Dataset1_Source_data_connectionString": {
 			"value": ""
 		},
+		"LS_CSV_FILES_IN_CONTAINER_connectionString": {
+			"value": ""
+		},
 		"LS_to_Dev_Conatiner_connectionString": {
 			"value": ""
 		},
