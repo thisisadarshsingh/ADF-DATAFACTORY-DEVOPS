@@ -1,0 +1,19 @@
+{
+	"name": "Dataset2DevConatiner",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_to_Dev_Conatiner",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "data"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
