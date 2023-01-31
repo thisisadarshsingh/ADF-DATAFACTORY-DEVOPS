@@ -20,18 +20,23 @@
 		},
 		"schema": [
 			{
+				"name": "coupon_id",
 				"type": "String"
 			},
 			{
+				"name": "customer_id",
 				"type": "String"
 			},
 			{
+				"name": "discount",
 				"type": "String"
 			},
 			{
+				"name": "startDate",
 				"type": "String"
 			},
 			{
+				"name": "endDate",
 				"type": "String"
 			}
 		]
