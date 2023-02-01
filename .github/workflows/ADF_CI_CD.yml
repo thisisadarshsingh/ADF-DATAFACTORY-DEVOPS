@@ -3,10 +3,10 @@
 on:
   push:
     branches: [ adf_publish ]
-    paths: VM/**
+    paths: DEV-Datafact-ad-1010/**
   pull_request:
     branches: [ adf_publish ]    
-    paths: VM/**
+    paths: DEV-Datafact-ad-1010/**
 
   workflow_dispatch:
 
