@@ -27,7 +27,7 @@
 				}
 			},
 			{
-				"name": "Wait for another 5 seconds second",
+				"name": "Wait for another 500 seconds second",
 				"type": "Wait",
 				"dependsOn": [
 					{
