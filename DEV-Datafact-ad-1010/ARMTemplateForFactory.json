@@ -62,7 +62,7 @@
 						}
 					},
 					{
-						"name": "Wait for another 5 seconds second",
+						"name": "Wait for another 500 seconds second",
 						"type": "Wait",
 						"dependsOn": [
 							{
@@ -211,23 +211,8 @@
 								"dependencyConditions": [
 									"Succeeded"
 								]
-							},
-							{
-								"activity": "Wait2",
-								"dependencyConditions": [
-									"Succeeded"
-								]
 							}
 						],
-						"userProperties": [],
-						"typeProperties": {
-							"waitTimeInSeconds": 1
-						}
-					},
-					{
-						"name": "Wait2",
-						"type": "Wait",
-						"dependsOn": [],
 						"userProperties": [],
 						"typeProperties": {
 							"waitTimeInSeconds": 1
