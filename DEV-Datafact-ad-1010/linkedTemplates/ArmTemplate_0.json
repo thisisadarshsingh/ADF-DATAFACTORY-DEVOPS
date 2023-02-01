@@ -516,7 +516,7 @@
 						}
 					},
 					{
-						"name": "Wait for another ten seconds properly seconds second",
+						"name": "Wait for another11111 properly seconds second",
 						"type": "Wait",
 						"dependsOn": [
 							{
@@ -524,23 +524,8 @@
 								"dependencyConditions": [
 									"Succeeded"
 								]
-							},
-							{
-								"activity": "Wait1",
-								"dependencyConditions": [
-									"Succeeded"
-								]
 							}
 						],
-						"userProperties": [],
-						"typeProperties": {
-							"waitTimeInSeconds": 1
-						}
-					},
-					{
-						"name": "Wait1",
-						"type": "Wait",
-						"dependsOn": [],
 						"userProperties": [],
 						"typeProperties": {
 							"waitTimeInSeconds": 1
