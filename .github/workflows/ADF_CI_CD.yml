@@ -2,10 +2,10 @@
 
 on:
   push:
-    branches: [ main ]
+    branches: [ adf_publish ]
     paths: VM/**
   pull_request:
-    branches: [ main ]    
+    branches: [ adf_publish ]    
     paths: VM/**
 
   workflow_dispatch:
