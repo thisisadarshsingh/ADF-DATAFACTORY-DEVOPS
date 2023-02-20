@@ -1,5 +1,13 @@
 {
 	"name": "DEV-Datafact-ad-1010",
+	"properties": {
+		"globalParameters": {
+			"url": {
+				"type": "string",
+				"value": "https://adb-2333880402301054.14.azuredatabricks.net"
+			}
+		}
+	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
