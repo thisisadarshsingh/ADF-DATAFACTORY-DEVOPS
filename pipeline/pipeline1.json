@@ -1,5 +1,5 @@
 {
-	"name": "databricks",
+	"name": "pipeline1",
 	"properties": {
 		"activities": [
 			{
@@ -13,14 +13,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
-				"typeProperties": {
-					"notebookPath": "/Users/adarshsingh1514@outlook.com/Notebook_adf"
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureDatabricks1",
-					"type": "LinkedServiceReference"
-				}
+				"userProperties": []
 			}
 		],
 		"annotations": []
