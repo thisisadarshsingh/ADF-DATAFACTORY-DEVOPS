@@ -11,6 +11,9 @@
 		"Dataset1_Source_data_connectionString": {
 			"value": ""
 		},
+		"AzureDatabricks1_domain": {
+			"value": ""
+		},
 		"LS_CSV_FILES_IN_CONTAINER_connectionString": {
 			"value": ""
 		},
