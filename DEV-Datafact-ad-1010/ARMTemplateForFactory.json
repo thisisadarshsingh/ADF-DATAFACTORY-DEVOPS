@@ -25,7 +25,7 @@
 		},
 		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
 			"type": "string",
-			"defaultValue": "0220-062547-a28uei50"
+			"defaultValue": "0220-074219-u4bjjg1v"
 		}
 	},
 	"variables": {
@@ -239,7 +239,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/pipeline1')]",
+			"name": "[concat(parameters('factoryName'), '/databricks')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -257,7 +257,7 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"notebookPath": "/Users/adarshsingh1514@outlook.com/notebook_test"
+							"notebookPath": "/Users/adarshsingh1514@outlook.com"
 						},
 						"linkedServiceName": {
 							"referenceName": "AzureDatabricks1",
@@ -475,7 +475,7 @@
 				"annotations": [],
 				"type": "AzureDatabricks",
 				"typeProperties": {
-					"domain": "https://adb-3236903771879192.12.azuredatabricks.net",
+					"domain": "https://adb-2333880402301054.14.azuredatabricks.net",
 					"accessToken": {
 						"type": "SecureString",
 						"value": "[parameters('AzureDatabricks1_accessToken')]"
