@@ -38,15 +38,14 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"parameters": {
-					"dns": {
-						"type": "string",
-						"defaultValue": "https://adb-2333880402301054.14.azuredatabricks.net"
+					"dnss": {
+						"type": "string"
 					}
 				},
 				"annotations": [],
 				"type": "AzureDatabricks",
 				"typeProperties": {
-					"domain": "@linkedService().dns",
+					"domain": "@linkedService().dnss",
 					"accessToken": {
 						"type": "SecureString",
 						"value": "[parameters('AzureDatabricks1_accessToken')]"
@@ -119,9 +118,7 @@
 						"linkedServiceName": {
 							"referenceName": "AzureDatabricks1",
 							"type": "LinkedServiceReference",
-							"parameters": {
-								"dns": "https://adb-2333880402301054.14.azuredatabricks.net"
-							}
+							"parameters": {}
 						}
 					}
 				],
