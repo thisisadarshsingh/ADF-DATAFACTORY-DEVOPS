@@ -13,15 +13,9 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"notebookPath": "/Users/adarshsingh1514@outlook.com/Notebook_adf"
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureDatabricks1",
-					"type": "LinkedServiceReference",
-					"parameters": {
-						"dns": "https://adb-2333880402301054.14.azuredatabricks.net"
-					}
 				}
 			}
 		],
