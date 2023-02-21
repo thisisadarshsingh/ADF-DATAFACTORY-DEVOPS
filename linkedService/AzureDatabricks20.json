@@ -1,0 +1,27 @@
+{
+	"name": "AzureDatabricks20",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureDatabricks",
+		"parameters": {
+			"domain": {
+				"type": "String"
+			},
+			"accessToken": {
+				"type": "String"
+			},
+			"existingClusterId": {
+				"type": "String"
+			}
+		},
+		"typeProperties": {
+			"domain": "@{linkedService().domain}",
+			"accessToken": {
+				"type": "SecureString",
+				"value": "**********"
+			},
+			"existingClusterId": "@{linkedService().existingClusterId}"
+		},
+		"annotations": []
+	}
+}
