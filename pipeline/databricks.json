@@ -19,7 +19,10 @@
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
-					"type": "LinkedServiceReference"
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"dns": "https://adb-2333880402301054.14.azuredatabricks.net"
+					}
 				}
 			}
 		],
