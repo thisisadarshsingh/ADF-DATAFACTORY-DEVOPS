@@ -16,6 +16,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"notebookPath": "/Users/adarshsingh1514@outlook.com/Notebook_adf"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks20",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],
