@@ -7,9 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "DEV-Datafact-ad-1010"
 		},
-		"AzureDatabricks1_accessToken": {
+		"AzureDatabricks20_accessToken": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks20'"
 		},
 		"Dataset1_Source_data_connectionString": {
 			"type": "secureString",
@@ -23,9 +23,9 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_to_Dev_Conatiner'"
 		},
-		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+		"AzureDatabricks20_properties_typeProperties_existingClusterId": {
 			"type": "string",
-			"defaultValue": "0220-074219-u4bjjg1v"
+			"defaultValue": "@{linkedService().existingClusterId}"
 		},
 		"containerUri": {
 			"type": "string",
@@ -54,8 +54,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureDatabricks1_accessToken": {
-						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					"AzureDatabricks20_accessToken": {
+						"value": "[parameters('AzureDatabricks20_accessToken')]"
 					},
 					"Dataset1_Source_data_connectionString": {
 						"value": "[parameters('Dataset1_Source_data_connectionString')]"
@@ -66,8 +66,8 @@
 					"LS_to_Dev_Conatiner_connectionString": {
 						"value": "[parameters('LS_to_Dev_Conatiner_connectionString')]"
 					},
-					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					"AzureDatabricks20_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks20_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},

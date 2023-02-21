@@ -7,9 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "DEV-Datafact-ad-1010"
 		},
-		"AzureDatabricks1_accessToken": {
+		"AzureDatabricks20_accessToken": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks20'"
 		},
 		"Dataset1_Source_data_connectionString": {
 			"type": "secureString",
@@ -23,9 +23,9 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_to_Dev_Conatiner'"
 		},
-		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+		"AzureDatabricks20_properties_typeProperties_existingClusterId": {
 			"type": "string",
-			"defaultValue": "0220-074219-u4bjjg1v"
+			"defaultValue": "@{linkedService().existingClusterId}"
 		}
 	},
 	"variables": {
@@ -260,9 +260,8 @@
 							"notebookPath": "/Users/adarshsingh1514@outlook.com/Notebook_adf"
 						},
 						"linkedServiceName": {
-							"referenceName": "AzureDatabricks1",
-							"type": "LinkedServiceReference",
-							"parameters": {}
+							"referenceName": "AzureDatabricks20",
+							"type": "LinkedServiceReference"
 						}
 					}
 				],
@@ -273,7 +272,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDatabricks1')]"
+				"[concat(variables('factoryId'), '/linkedServices/AzureDatabricks20')]"
 			]
 		},
 		{
@@ -469,24 +468,30 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureDatabricks1')]",
+			"name": "[concat(parameters('factoryName'), '/AzureDatabricks20')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"parameters": {
-					"dnss": {
-						"type": "string"
+					"domain": {
+						"type": "String"
+					},
+					"accessToken": {
+						"type": "String"
+					},
+					"existingClusterId": {
+						"type": "String"
 					}
 				},
 				"annotations": [],
 				"type": "AzureDatabricks",
 				"typeProperties": {
-					"domain": "@linkedService().dnss",
+					"domain": "@{linkedService().domain}",
 					"accessToken": {
 						"type": "SecureString",
-						"value": "[parameters('AzureDatabricks1_accessToken')]"
+						"value": "[parameters('AzureDatabricks20_accessToken')]"
 					},
-					"existingClusterId": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					"existingClusterId": "[parameters('AzureDatabricks20_properties_typeProperties_existingClusterId')]"
 				}
 			},
 			"dependsOn": []

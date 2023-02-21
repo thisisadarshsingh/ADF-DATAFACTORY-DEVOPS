@@ -5,7 +5,7 @@
 		"factoryName": {
 			"value": "DEV-Datafact-ad-1010"
 		},
-		"AzureDatabricks1_accessToken": {
+		"AzureDatabricks20_accessToken": {
 			"value": ""
 		},
 		"Dataset1_Source_data_connectionString": {
@@ -17,8 +17,8 @@
 		"LS_to_Dev_Conatiner_connectionString": {
 			"value": ""
 		},
-		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-			"value": "0220-074219-u4bjjg1v"
+		"AzureDatabricks20_properties_typeProperties_existingClusterId": {
+			"value": "@{linkedService().existingClusterId}"
 		},
 		"containerUri": {
 			"value": ""
